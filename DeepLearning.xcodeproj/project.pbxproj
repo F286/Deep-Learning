@@ -8,23 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		355097AF1C6712C90080BACF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 355097AE1C6712C90080BACF /* main.cpp */; };
+		355097B71C6714020080BACF /* Neuron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 355097B51C6714020080BACF /* Neuron.cpp */; };
+		355097BC1C67237F0080BACF /* train-images-idx3-ubyte in CopyFiles */ = {isa = PBXBuildFile; fileRef = 355097BA1C671C8B0080BACF /* train-images-idx3-ubyte */; };
+		355097BD1C6723810080BACF /* train-labels-idx1-ubyte in CopyFiles */ = {isa = PBXBuildFile; fileRef = 355097BB1C671C8B0080BACF /* train-labels-idx1-ubyte */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		355097A91C6712C80080BACF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				355097BC1C67237F0080BACF /* train-images-idx3-ubyte in CopyFiles */,
+				355097BD1C6723810080BACF /* train-labels-idx1-ubyte in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		355097AB1C6712C90080BACF /* DeepLearning */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DeepLearning; sourceTree = BUILT_PRODUCTS_DIR; };
 		355097AE1C6712C90080BACF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		355097B51C6714020080BACF /* Neuron.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Neuron.cpp; sourceTree = "<group>"; };
+		355097B61C6714020080BACF /* Neuron.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Neuron.hpp; sourceTree = "<group>"; };
+		355097B81C671C8B0080BACF /* t10k-images-idx3-ubyte */ = {isa = PBXFileReference; lastKnownFileType = file; path = "t10k-images-idx3-ubyte"; sourceTree = "<group>"; };
+		355097B91C671C8B0080BACF /* t10k-labels-idx1-ubyte */ = {isa = PBXFileReference; lastKnownFileType = file; path = "t10k-labels-idx1-ubyte"; sourceTree = "<group>"; };
+		355097BA1C671C8B0080BACF /* train-images-idx3-ubyte */ = {isa = PBXFileReference; lastKnownFileType = file; path = "train-images-idx3-ubyte"; sourceTree = "<group>"; };
+		355097BB1C671C8B0080BACF /* train-labels-idx1-ubyte */ = {isa = PBXFileReference; lastKnownFileType = file; path = "train-labels-idx1-ubyte"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +68,13 @@
 		355097AD1C6712C90080BACF /* DeepLearning */ = {
 			isa = PBXGroup;
 			children = (
+				355097B81C671C8B0080BACF /* t10k-images-idx3-ubyte */,
+				355097B91C671C8B0080BACF /* t10k-labels-idx1-ubyte */,
+				355097BA1C671C8B0080BACF /* train-images-idx3-ubyte */,
+				355097BB1C671C8B0080BACF /* train-labels-idx1-ubyte */,
 				355097AE1C6712C90080BACF /* main.cpp */,
+				355097B51C6714020080BACF /* Neuron.cpp */,
+				355097B61C6714020080BACF /* Neuron.hpp */,
 			);
 			path = DeepLearning;
 			sourceTree = "<group>";
@@ -118,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				355097B71C6714020080BACF /* Neuron.cpp in Sources */,
 				355097AF1C6712C90080BACF /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
